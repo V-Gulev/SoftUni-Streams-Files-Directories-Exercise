@@ -16,11 +16,12 @@ public class WriteEveryThirdLine_05 {
             String line = bufferedReader.readLine();
             int counter = 0;
             while (line != null) {
+                counter++;
                 if (counter % 3 == 0) {
                     bufferedWriter.write(line);
                     bufferedWriter.newLine();
                 }
-                counter++;
+
                 line = bufferedReader.readLine();
             }
 
